@@ -1,0 +1,463 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: relative;
+}
+a{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-left: 3px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+/*上面最大的图片*/
+#top{
+    background: url(../img/8.jpg) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height:70%;
+    margin: 0 auto;
+    display: table;
+}
+h1{
+    font-size: 85px;
+    text-align: center;
+    color: #fff;
+    margin: 0px;
+    font-family: "华文隶书";
+}
+#top h1{
+    display: table-cell;
+    vertical-align: middle;
+}
+/*左右两边的绿叶*/
+#green_leave_left{
+    width: 50%;
+    float: left;
+}
+#green_leave_right{
+    width: 50%;
+    float: right;
+}
+#green_leave_right img{
+    float: right;
+}
+li{
+    list-style: none;
+}
+figure{
+    position: fixed;
+    top: 60px;
+    left: 20px; 
+    display: block; 
+    border-radius: 50%; 
+    height: 102px; 
+    width: 102px;
+    line-height: 90px; 
+    margin: 0px;  
+    color: #fff;
+    background:url(../img/2.jpg) no-repeat;
+    background-position: -13px -13px;
+    z-index: 100;
+}
+#float_top_one,#float_top_two,#float_top_three,#float_top_four{
+    position: fixed;
+    z-index: 100;
+    width: 600px;
+    display: none;
+    cursor: pointer;
+    color: #EDCCB9;
+    font-size: 40px;
+}
+#float_top_one{
+    top: 80px;
+    left: 122px;
+}
+#float_top_two{
+    top: 200px;
+    left: 124px;
+}
+#float_top_three{
+    top: 320px;
+    left: 124px;
+}
+#float_top_four{
+    top: 444px;
+    left: 122px;
+}
+figure:hover{
+    -webkit-animation: circle 2s linear;
+            animation: circle 2s linear;
+}
+@-webkit-keyframes circle{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg); 
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes circle{
+    0%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes SonwFlow {
+    0%{
+        bottom: 100%;opacity:0;
+    }
+    50%{
+        opacity: 1;-webkit-transform: rotate(720deg);transform: rotate(720deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);opacity: 0;bottom: 0%;
+    }
+}
+@keyframes SonwFlow {
+    0%{
+        bottom: 100%;opacity:0;
+    }
+    50%{
+        opacity: 1;-webkit-transform: rotate(720deg);transform: rotate(720deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);opacity: 0;bottom: 0%;
+    }
+}
+.container{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.picNext{
+    position: absolute; opacity: 1; -webkit-animation: SonwFlow 5s; animation: SonwFlow 5s; height: 20px;
+}
+.circle_one{
+    top: 180px;
+    background-position: -151px -12.5155px;
+}
+.circle_two{
+    top:300px;
+    background-position: -14px -152px;
+    
+}
+.circle_three{
+    top: 420px;
+    background-position: -151px -152px;
+}
+#red_wish{
+    margin-top: 150px;
+    color: #D71A36;
+}
+#myself_wish{
+    width: 100%;
+    height: 100%;
+    background: #D71A36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#wish_my_wish{
+    background: #eee;
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "华文隶书";
+    font-size: 5vmin;
+    word-break: break-all;
+    overflow-x:hidden; 
+}
+#wish_my_wish:hover{
+    box-shadow: 0px 0px 0px #eee, 0px 3px 20px #fff;
+    position: relative;
+    top: 1px;
+    transition: all 0.5s;
+}
+#myself_wish a{
+    color: #000;
+}
+#myself_wish ul{
+    width: 20%;
+    height: 40%;
+    color: #fff;
+}
+#myself_wish ul li{
+    width: 100%;
+    height: 50%;
+}
+#myself_wish #three_li{
+    width: 50%;
+    height: 15%;
+    float: left;
+}
+#myself_wish #four_li{
+    width: 50%;
+    height: 15%;
+    float: left;
+}
+#myself_wish a{
+    width: 50%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    margin: 0 auto;
+    font-size: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    box-shadow: 0px 3px 0px #ddd, 0px 3px 20px rgba(255, 0, 0, 0.7);
+}
+#myself_wish a:active{
+    box-shadow: 0px 0px 0px #ddd, 0px 0px 20px rgba(255, 0, 0, 0.7);
+    position: relative;
+    top: 10px;
+}
+#myself_wish img{
+    vertical-align: middle;
+}
+#myself_wish #myself_wish_span{
+    display: block;
+    width: 70%;
+    height: 50%;
+    word-break:break-all;
+    overflow-x: hidden;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-family: "华文隶书";
+    font-size: 20px;
+}
+#myself_wish #myself_wish_big{
+    border: 1px solid #fff;
+    width: 80%;
+    height: 84%;
+    outline: none;
+    font-family: "华文隶书";
+    word-break: break-all;
+    font-size: 20px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+#myself_wish #myself_wish_big:active{
+    border: 2px solid #fff;
+}
+#myself_wish li{
+    font-family: "华文隶书";
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:3%;
+}
+#myself_wish #myself_wish_div_top_li{
+    width: 100%;
+    height: auto;
+}
+p{
+    margin: 0px;
+    margin-top: 30px;
+    text-align: center;
+    color:#BABABA;
+    line-height: 40px;
+}
+#pile_gift{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+    position: relative;
+}
+#pile_gift img{
+    width: 29.7%;
+    margin: 0 auto;
+}
+#wish_background{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #D71A36;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+.auto_wish{
+    width: 16.2%;
+    height: 33%;
+    margin: 4.41%;
+    border-radius: 10px;
+    word-break: break-all;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "华文隶书";
+    font-size: 4vmin;
+    overflow-x: hidden;
+}
+.auto_wish:hover{
+    box-shadow: 0px 0px 0px #eee, 0px 3px 15px #fff;
+    position: relative;
+    top: 1px;
+    transition: all 0.5s;
+}
+#deer_box{
+    width: 67%;
+    margin:0 auto;
+}
+#deer_left{
+    width: 100%;
+    height: 45%;
+    position: relative;
+}
+#deer_left img{
+    width: 34%;
+    height: 100%;
+}
+#deer_left_text{
+    width: 61%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    display: table;
+    
+}
+#deer_left_text p{
+    width: 550px;
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+}
+#deer_right{
+    width: 100%;
+    height: 56%;
+    position: relative;
+}
+#deer_right img{
+    width: 34%;
+    height: 100%;
+    margin-left: 560px;
+}
+#deer_right_text{
+    width:61%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: table;
+}
+#deer_right_text p{
+    width: 550px;
+    height: 370px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 30px;
+}
+#check_others_wish{
+    width: 100%;
+    height: 30%;
+    display: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+/*这里用来实现按钮的3D效果*/
+#check_others_btn{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    background: #ddd;
+    font-family: "华文隶书";
+    font-weight: 700;
+    font-size: 7vmin;
+    width: 34%;
+    height: 50%;
+    padding: 0px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 4px 0px #eee, 0px 9px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 0px #eee, 0px 9px 25px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    transition: all 2s;
+}
+#check_others_btn:active{
+    -webkit-box-shadow: 0px 1px 0px #eee, 0px 3px 6px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 1px 0px #eee, 0px 3px 6px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 10px;
+}
+#check_others_btn:hover{
+    background:#D71A36;
+}
+/*3D效果结束*/
+#out_btn_bottom{
+    background: #ddd;
+    width: 8%;
+    height: 46%;
+    font-family: "华文隶书";
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    align-items: center;
+    font-size: 5vmin;
+    transition: all 2s;
+    -webkit-box-shadow: 0px 4px 0px #eee, 0px 9px 25px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 4px 0px #eee, 0px 9px 25px rgba(0, 0, 0, 0.5);
+}
+#out_btn_bottom:active{
+    -webkit-box-shadow: 0px 1px 0px #eee, 0px 3px 6px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 1px 0px #eee, 0px 3px 6px rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: 10px;
+}
+#out_btn_bottom:hover{
+    background: #D71A36;
+}
+#copy{
+    background:rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: 700;
+    word-spacing: 3px;
+}

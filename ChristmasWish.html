@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/Happy_Christmas.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>ChristmasWish</title>
+</head>
+
+<body>
+    <audio src="music/Easy Breeze - Thomas Greenberg.mp3" loop="true" id="music">
+    </audio>
+    <!-- 这是一段音乐，音乐循环播放  -->
+    <div id="top">
+        <!--上面最大的背景，欢迎进入许愿网站-->
+        <h1>
+            Welcome to the Christmas Wish page
+        </h1>
+        <figure class="circle" id="scroll_one">
+            <!-- 你鼠标放上去就知道，偷偷告诉你它可以动哦 -->
+            <a href="#top"></a>
+        </figure>
+        <figure class="circle_one" id="scroll_two">
+            <a href="#green_leave_left" id="skip_top"></a>
+        </figure>
+        <figure class="circle_two" id="scroll_three">
+            <a href="javascript:;" id="skip"></a>
+        </figure>
+        <figure class="circle_three" id="scroll_four">
+            <a href="javascript:;" id="skip1"></a>
+        </figure>
+    </div>
+    <div id="green_leave_left">
+        <!--下面左边的装饰叶子-->
+        <img src="img/8.png">
+    </div>
+    <div id="green_leave_right">
+        <!--下面右边的装饰叶子-->
+        <img src="img/9.png">
+    </div>
+    <h1 id="red_wish">
+        <!--红色的祝福语 -->
+        Hope All Your Christmas Dreams Come True
+    </h1>
+    <p id="first_p">
+        Warm greetings and best wishes for happiness and good luck in the coming year
+        <br> May the beauty and joy of Christmas remain with you throughout the new year
+        <br> Wishing you a blessed Christmas and a New Year filled with happy surprises
+        <br> Have a love filled Christmas and New Year
+    </p>
+    <div id="pile_gift">
+        <!--这是那个礼物的图片-->
+        <img src="img/ChristmasGift.png">
+    </div>
+    <div id="deer_box">
+        <div id="deer_left">
+            <!--左边的那头鹿-->
+            <img src="img/1.png">
+            <div id="deer_left_text">
+                <p>
+                    Santa Claus for the descendants of the God odin Santa Claus is also said to come from Santa Nicola, so Santa Claus also known
+                    as St.Nicholas. It is said that he was in Asia Minor city of Rafah every bishop named St. Nicola, after
+                    the death of sainthood, wearing a red, white beard wearing a red hat.
+                </p>
+            </div>
+        </div>
+        <div id="deer_right">
+            <!--右边的那头鹿-->
+            <img src="img/3.png">
+            <div id="deer_right_text">
+                <p>
+                    Every Christmas he drives a sleigh drawn by deer from the north, into the house by the chimney, and the Christmas presents
+                    in the stockings on the children's bed or before the fire. So when westerners celebrate Christmas, parents
+                    place Christmas presents for children in stockings and hang them on their children's beds on Christmas
+                    Eve.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="float_top_one">Back to top</div>
+    <!--这些就是固定的列表的旁边的文字，就是那些圆的旁边-->
+    <div id="float_top_two">Main subject</div>
+    <div id="float_top_three">View eros</div>
+    <div id="float_top_four">Others eros</div>
+
+    <div id="myself_wish">
+        <!--许自己的愿望-->
+        <div id="wish_my_wish"></div>
+        <ul>
+            <li id="myself_wish_div_top_li">
+                <img src="img/2.png">
+                <span>白狐</span>
+            </li>
+            <li>
+                输入自己的愿望
+                <div id="myself_wish_big" contenteditable="true"></div>
+            </li>
+            <li id="three_li">
+                <a href="javascript:;" id="self_wish">wish</a>
+            </li>
+            <li id="four_li">
+                <a href="javascript:;" id="out_btn">back</a>
+            </li>
+        </ul>
+    </div>
+    <div id="check_others_wish">
+        <a href="javascript:;" id="check_others_btn">Check the wishes of others</a>
+        <a href="javascript:;" id="out_btn_bottom">back</a>
+    </div>
+    <!--查看别人的愿望的按钮-->
+    <div id="wish_background"></div>
+    <!--这里用js自动生成了六个div用来装别人的愿望-->
+    <div id="copy">
+        <div>Copyright&copy;2017 All Rights Reserved DXstudio</div>
+    </div>
+</body>
+
+</html>

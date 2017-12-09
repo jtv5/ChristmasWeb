@@ -1,0 +1,120 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+@keyframes typing{
+    from{
+        width:0%
+    }
+    to{
+        width:100%;
+    }
+}
+@keyframes mysnow {
+    0%{
+        bottom: 100%;opacity:0;
+    }
+    50%{
+        opacity: 1;transform: rotate(720deg);
+    }
+    100%{
+        transform: rotate(0deg);opacity: 0;bottom: 0%;
+    }
+}
+.container{
+    position: fixed;
+}
+.pic{
+    position: absolute; opacity: 1; animation: mysnow 5s; height: 20px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: url(../img/3.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;    
+}
+.type{
+    white-space:nowrap;
+    display:inline-block;
+    font-family: "华文行楷";
+    margin-top: 50px;
+}
+.type div{
+    display:inline-block;
+}
+.tap_tap{
+    white-space:nowrap;
+    overflow:hidden;
+    display:inline-block;
+    animation:typing 5s steps(200);
+    background:rgba(0, 0, 0,0.3 );
+    margin-top: -12px;
+}
+.box h1{
+    color: #fff;
+    font-size: 30px;
+    font-family: "方正舒体";
+    float:left;
+    display: block;
+    margin: 0px;
+    margin-left: 50px;
+}
+.board{
+    width: 29%;
+    height: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 400px;
+    align-self: center;
+}
+.board div{
+    width: 240px;
+    height: 40px;
+    margin: 0px auto;
+}
+.board .top{
+    width: 240px;
+    color: #fff;;
+    font-size: 30px;
+    text-align: center;
+    font-family: "华文琥珀";
+    position: relative;
+}
+.board input{
+    width: 200px;
+    height: 30px;
+    padding: 5px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    text-align: left; 
+    line-height: 30px;
+    color: #CACACA;
+    font-family: "华文隶书";
+    background: #fff;
+}
+a{
+    width: 240px;
+    height: 30px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color: #799ABC;
+    background: #fff;
+    margin: 0px auto;
+    border-radius: 5px;
+    font-family: "华文新魏";
+    line-height: 30px;
+}
