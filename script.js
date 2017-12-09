@@ -98,7 +98,7 @@ window.onload = function () {
     //特效结束
 
     oBtn2.onclick = function () {
-        if (oDiv13.innerHTML == '' && '<br>' || oDiv13.innerHTML == '') {
+        if (oDiv13.innerHTML == ''+'<br>' || oDiv13.innerHTML == '') {
             alert('兄弟写点内容吧!');
         } else {
             console.log(oDiv13.innerHTML)
