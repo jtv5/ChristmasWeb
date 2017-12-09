@@ -78,24 +78,27 @@ figure{
     width: 600px;
     display: none;
     cursor: pointer;
-    color: #EDCCB9;
     font-size: 40px;
 }
 #float_top_one{
     top: 80px;
     left: 122px;
+    color: #66CC66;
 }
 #float_top_two{
     top: 200px;
     left: 124px;
+    color: #66CCCC;
 }
 #float_top_three{
     top: 320px;
     left: 124px;
+    color: #FFFF33;
 }
 #float_top_four{
     top: 444px;
     left: 122px;
+    color: #FF3399;
 }
 figure:hover{
     -webkit-animation: circle 2s linear;
